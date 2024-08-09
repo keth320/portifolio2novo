@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #Adfff0;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px 0;
+}
+
+h1, p, .subtitulo {
+    color: #F6F6F6;
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #B3093F;
+}
+
+.pz_titulo {
+    font-size: 34px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #B3093F;
+    margin-left: 20px; /* Ajuste o espaçamento entre a foto e o título conforme necessário */
+}
+
+.pz_texto {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rodape {
+    background-color: #B3093F;
+    padding: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    margin-top: auto; /* Fixa o rodapé na parte inferior da página */
+}
+
+.menu {
+    display: flex;
+    padding: 10px 5%;
+    flex-direction: row;
+    cursor: pointer;
+    margin-left: 12%;
+    gap: 100px;
+    font-size: 24px;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: #B3093F;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.editarmain {
+    margin: 5% 15%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textor {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.dados-pessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.linha-separadora {
+    border: 0;
+    height: 1px;
+    background: #B3093F; /* Cor da linha */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+}
+.cabecalho { /* header */
+    background-color: #c4c4c4; /* Define a cor de fundo do cabeçalho */
+    color: #fff; /* Define a cor do texto do cabeçalho */
+    padding: 2% 0% 0% 15%; /* Define o preenchimento do cabeçalho */
+
+}
+/* Media Queries */
+
+/* Máximo 1024px */
+@media (max-width: 1024px) {
+    .pai {
+        margin: 5% 10%; /* Ajusta margens */
+        flex-direction: column; /* Organiza em coluna */
+    }
+
+    .textor {
+        width: 90%; /* Ajusta largura */
+    }
+
+    .menu {
+        gap: 50px; /* Espaçamento entre itens */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Centraliza itens */
+        font-size: 20px; 
+    }
+
+    .button {
+        width: 100%; /* Largura total */
+        font-size: 16px; 
+    }
+}
+
+/* Máximo 768px */
+@media (max-width: 768px) {
+    .pai {
+        margin: 5% 5%; /* Ajusta margens */
+    }
+
+    .textor {
+        width: 100%; /* Largura total */
+    }
+
+    .menu {
+        gap: 30px; /* Espaçamento entre itens */
+        font-size: 18px; 
+    }
+
+    .button {
+        width: 100%; /* Largura total */
+        font-size: 16px;
+    }
+}
+
+/* Máximo 480px */
+@media (max-width: 480px) {
+    .pai {
+        margin: 5% 2%; 
+    }
+
+    .textor {
+        width: 100%; 
+        gap: 20px; 
+    }
+
+    .menu {
+        gap: 20px; 
+        font-size: 16px; 
+    }
+
+    .button {
+        width: 100%; 
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+    .pz_titulo {
+        font-size: 28px; 
+    }
+
+    .pz_texto {
+        font-size: 20px; 
+    }
+}

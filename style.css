@@ -1,0 +1,209 @@
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo do tamanho total */
+}
+
+body {
+    background-color: #A5BEFA; /* Cor de fundo */
+    font-family: "Montserrat", sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+}
+
+header {
+    padding: 10px 0; /* Preenchimento no header */
+    background-color:   #B3093F;/* Cor de fundo do header */
+}
+
+h1, p, .destaque_t {
+    color: #F6F6F6;
+
+}
+
+.destaque_t {
+    color:  #B3093F;
+
+}
+
+.pai {
+    margin: 5% 15%; /* Margens */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 40px; 
+    height: 100vh; /* Altura total da viewport */
+}
+
+.textor {
+    width: 615px; /* Largura fixa */
+    display: flex; 
+    justify-content: center; /* Centraliza itens horizontalmente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.links {
+    display: flex; 
+    justify-content: space-between; /* Espaça itens igualmente */
+    align-items: center; 
+    flex-direction: column; /* Organiza itens em coluna */
+    gap: 28px; /* Espaçamento entre itens */
+}
+
+.pz_titulo {
+    font-size: 34px; 
+    font-family: "Krona One", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+.pz_texto {
+    font-size: 22px; /* Tamanho da fonte */
+    font-family: "Montserrat", sans-serif; /* Fonte padrão */
+    font-weight: 400; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+}
+
+.button {
+    display: flex; 
+    padding: 10px 20px; 
+    color:#F6F6F6;
+    border-width: 2px; /* Largura da borda */
+    border-color: #B3093F; 
+    border-style: solid; 
+    border-radius: 8px; /* Arredondamento das bordas */
+    cursor: pointer; /* Cursor de ponteiro */
+    text-align: center; 
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    gap: 6px; 
+    width: 378px; /* Largura fixa */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.button:hover {
+    background-color:#B3093F; /* Cor de fundo ao passar o cursor */
+}
+
+.apresentação_titulo_link {
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: "Montserrat", sans-serif; /* Fonte padrão */
+    font-weight: 400; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+    color: #F6F6F6;   /* Cor do texto */
+}
+
+footer {
+    background-color: #B3093F; /* Cor de fundo do rodapé */
+}
+
+.rodape {
+    padding: 24px; /* Preenchimento */
+    text-align: center; /* Alinha texto ao centro */
+    font-size: 22px; /* Tamanho da fonte */
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    color: #ffffff; 
+}
+
+.menu {
+    display: flex; 
+    padding: 10px 5%; /* Preenchimento */
+    flex-direction: row; /* Alinha itens horizontalmente */
+    cursor: pointer; /* Cursor de ponteiro */
+    margin-left: 12%; 
+    gap: 100px; 
+    font-size: 24px; 
+}
+
+.menu1 {
+    text-decoration: none; 
+    color: #ffffff; 
+    font-size: 24px; 
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 600; 
+    font-style: normal; 
+}
+
+/* Media Queries */
+
+/* Máximo 1024px */
+@media (max-width: 1024px) {
+    .pai {
+        margin: 5% 10%; 
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .textor {
+        width: 90%; 
+    }
+
+    .menu {
+        gap: 50px; 
+        flex-direction: column; 
+        align-items: center; 
+        font-size: 20px; 
+    }
+
+    .button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+}
+
+/* Máximo 768px */
+@media (max-width: 768px) {
+    .pai {
+        margin: 5% 5%; 
+    }
+
+    .textor {
+        width: 100%; 
+    }
+
+    .menu {
+        gap: 30px; 
+        font-size: 18px; 
+    }
+
+    .button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+}
+
+/* Máximo 480px */
+@media (max-width: 480px) {
+    .pai {
+        margin: 5% 2%; 
+    }
+
+    .textor {
+        width: 100%; 
+        gap: 20px; 
+    }
+
+    .menu {
+        gap: 20px; 
+        font-size: 16px; 
+    }
+
+    .button {
+        width: 100%; 
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+    .pz_titulo {
+        font-size: 28px; 
+    }
+
+    .pz_texto {
+        font-size: 20px; 
+}
+}
